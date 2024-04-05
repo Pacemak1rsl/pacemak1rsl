@@ -53,6 +53,8 @@
         margin: 20px auto; /* 将视频居中显示 */
     }
 </style>
+    <!-- 引入 Video.js 的 CSS 文件 -->
+<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
 </head>
 <body>
 
@@ -74,11 +76,10 @@
         感受每一次互动；劈柴生火，使用斧头砍出窗户和地板，建造一间小木屋，或是一栋海滨小楼，一切由你决定。在春天和夏天里从小溪中捕捉新鲜的鲑鱼。收集和保存肉类为寒冬时光作准备。你在这座岛上并不孤单，因此，在冬日来临、食物和资源匮乏之际，你不会是唯一想要饱餐一顿的人。一个人求生，或者和朋友一同面对。分享物品，并一起构筑防御。带上储备物资，上天入地探索这座孤岛。
     </p>
     <h2>游戏视频</h2>
-    <video controls>
-        <source src="../森林之子\movie480_vp9 (1).webm" type="video/mp4" contrlos loop muted autoplay>
-        您的浏览器不支持 HTML5 视频标签。
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
+        <source src="../森林之子\movie480_vp9 (1).webm" type="video/webm">
+        <source src="../森林之子\movie480_vp9 (1).mp4" type="video/mp4">
     </video>
-
     <h2>游戏图片</h2>
     <img src="../森林之子\ss_e6e3ab1badfb287a77fb6eef7b1589a35371496b.jpg">
     <img src="../森林之子\ss_b05310f659a67129e9089fbb22e445b0998d6d1d.jpg">
