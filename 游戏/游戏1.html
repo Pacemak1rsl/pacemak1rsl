@@ -46,13 +46,15 @@
     margin: 20px auto;
 }
 
-
     video {
         max-width: 100%;
         display: block;
         margin: 20px auto; /* 将视频居中显示 */
     }
 </style>
+
+<!-- 引入 Video.js 的 CSS 文件 -->
+<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
 </head>
 <body>
 
@@ -80,15 +82,15 @@
         除了能与其他玩家一同游玩的多人联机游玩以外，
         本游戏也有非即时联机系统，能借此得知其他玩家的存在。</p>
     <h2>游戏视频</h2>
-    <video controls>
-        <source src="../艾尔登法环\movie480_vp9.webm" type="video/mp4" contrlos loop muted autoplay>
-        您的浏览器不支持 HTML5 视频标签。
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
+        <source src="../艾尔登法环/movie480_vp9.webm" type="video/webm">
+        <source src="../艾尔登法环/movie480_vp9.mp4" type="video/mp4">
     </video>
 
     <h2>游戏图片</h2>
-    <img src="../艾尔登法环\ss_cb9445da232527daf9b7d1d2fcc60fe213f0d7ba.1920x1080.jpg">
-    <img src="../艾尔登法环\ss_c97bcad291f4f45d4be4594f34bd78921d961099.jpg">
-    <img src="../艾尔登法环\ss_828169fcebebe98bee822bd88ae81b410068a2ba.1920x1080.jpg">
+    <img src="../艾尔登法环/ss_cb9445da232527daf9b7d1d2fcc60fe213f0d7ba.1920x1080.jpg">
+    <img src="../艾尔登法环/ss_c97bcad291f4f45d4be4594f34bd78921d961099.jpg">
+    <img src="../艾尔登法环/ss_828169fcebebe98bee822bd88ae81b410068a2ba.1920x1080.jpg">
     <h2>配置要求</h2>
     <p>最低配置:
         需要 64 位处理器和操作系统
@@ -107,14 +109,4 @@
         需要 64 位处理器和操作系统
         操作系统: Windows 10/11
         处理器: INTEL CORE I7-8700K or AMD RYZEN 5 3600X
-        内存: 16 GB RAM
-        显卡: NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB
-        DirectX 版本: 12
-        存储空间: 需要 60 GB 可用空间
-        声卡: Windows Compatible Audio Device
-        附注事项: 估计性能：1080p / 60fps / 高等质量设置。 实际性能可能因您的配置和设置而异。 系统要求可能会发生变化。
-        </p>
-</div>
-
-</body>
-</html>
+        内存
