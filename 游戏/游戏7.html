@@ -53,6 +53,8 @@
         margin: 20px auto; /* 将视频居中显示 */
     }
 </style>
+    <!-- 引入 Video.js 的 CSS 文件 -->
+<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
 </head>
 <body>
 
@@ -84,9 +86,9 @@
         极致氛围与沉浸感——黑暗中闪动的烛火、结霜面具后的喘息、夜风中传来的变种怪嘶吼——没有其他游戏能拥有地铁一般的沉浸式恐怖氛围……
     </p>
     <h2>游戏视频</h2>
-    <video controls>
-        <source src="../地铁：离去\movie480.webm" type="video/mp4" contrlos loop muted autoplay>
-        您的浏览器不支持 HTML5 视频标签。
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
+        <source src="../地铁：离去\movie480.webm" type="video/webm">
+        <source src="../地铁：离去\movie480.mp4" type="video/mp4">
     </video>
 
     <h2>游戏图片</h2>
