@@ -53,6 +53,8 @@
         margin: 20px auto; /* 将视频居中显示 */
     }
 </style>
+    <!-- 引入 Video.js 的 CSS 文件 -->
+<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
 </head>
 <body>
 
@@ -74,9 +76,9 @@
         关于人际关系的故事——在克服挑战的相处中发现真挚情感。帮助科迪和小梅学习如何克服他们之间的分歧。结识各种奇特和可爱的角色。团结一致，一起踏上冒险之旅！
     </p>
     <h2>游戏视频</h2>
-    <video controls>
-        <source src="../双人成行\movie480_vp9 (1).webm" type="video/mp4" contrlos loop muted autoplay>
-        您的浏览器不支持 HTML5 视频标签。
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
+        <source src="../双人成行\movie480_vp9 (1).webm" type="video/webm">
+        <source src="../双人成行\movie480_vp9 (1).mp4" type="video/mp4">
     </video>
 
     <h2>游戏图片</h2>
