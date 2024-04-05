@@ -53,6 +53,8 @@
         margin: 20px auto; /* 将视频居中显示 */
     }
 </style>
+    <!-- 引入 Video.js 的 CSS 文件 -->
+<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
 </head>
 <body>
 
@@ -68,9 +70,9 @@
     <p>玩家会使用手枪、步枪、自制炸药等武器，也会用锁喉、球棒和金属管等手段或武器进行近战攻击，保护自己免受感染者和其他人类幸存者的伤害。玩家还会在特写镜头下进行潜行战斗。武器和爆炸袭击可能致使出现斩首和/或肢解效果。游戏画面中会出现激烈的暴力行为，包括与自杀、折磨相关的主题。在游戏中，会有一位角色对一本成人杂志发表性相关言论；会有一位年轻角色饮用酒精饮料。对话中经常出现粗暴语言。
     </p>
     <h2>游戏视频</h2>
-    <video controls>
-        <source src="../最后生还者\movie480_vp9.webm" type="video/mp4" contrlos loop muted autoplay>
-        您的浏览器不支持 HTML5 视频标签。
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
+        <source src="../最后生还者\movie480_vp9.webm" type="video/webm">
+        <source src="../最后生还者\movie480_vp9.mp4" type="video/mp4">
     </video>
 
     <h2>游戏图片</h2>
