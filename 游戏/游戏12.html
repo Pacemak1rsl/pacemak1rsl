@@ -53,6 +53,8 @@
         margin: 20px auto; /* 将视频居中显示 */
     }
 </style>
+    <!-- 引入 Video.js 的 CSS 文件 -->
+<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
 </head>
 <body>
 
@@ -70,9 +72,9 @@
         成千上万漫威纽约市民的命运也压在他的肩上。
     </p>
     <h2>游戏视频</h2>
-    <video controls>
-        <source src="../漫威蜘蛛侠：重置版\movie480_vp9 (1).webm" type="video/mp4" contrlos loop muted autoplay>
-        您的浏览器不支持 HTML5 视频标签。
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
+        <source src="../漫威蜘蛛侠：重置版\movie480_vp9 (1).webm" type="video/webm">
+        <source src="../漫威蜘蛛侠：重置版\movie480_vp9 (1).mp4" type="video/mp4">
     </video>
 
     <h2>游戏图片</h2>
